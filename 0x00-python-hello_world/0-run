@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check if environment variable is set
+if [ -z "$PYFILE" ]
+then
+	echo "Error: No Python file specified!"
+	exit 1
+fi
+
+# Run the Python file
+python3 $PYFILE
