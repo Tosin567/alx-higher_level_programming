@@ -1,26 +1,18 @@
 #!/usr/bin/python3
-class Square:
+"""this is a square with a private instance"""
 
+
+class Square:
+    """Represents a square.
+    Private instance attribute: size.
+    Instantiation with optional size.
     """
-    # Write a class Square that defines a square by: (based on 1-square.py)
-    # Private instance attribute: size
-    # Instantiation with optional size: def __init__(self, size=0):
-    # VARIABLE(" "):
-    # class(Square): Size validation
-    # Return: Always 0. (Success)
-    """
-    """ the '__init __' method takes an optional parameter 'size', with...
-    a default value of 0. it will perform the below checks..."""
+
     def __init__(self, size=0):
-        """ If the 'size' is not an instance of 'int', it raises a 'TypeError
-        ...Exception with the message 'Size Must Be An Integer' """
+        """Initializes the data."""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
-            """If the size is less than '0', it raises a 'ValueError'
-            Exception with the message, 'size must be >= 0'"""
-            """Otherwise, it assigns the provided 'size' value to the Private
-            ...Instance attribute '__size'"""
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
