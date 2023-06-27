@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 class Node:
     """Node of a singly linked list.
     Private instance attribute: data:
