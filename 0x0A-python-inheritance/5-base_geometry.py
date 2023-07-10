@@ -1,7 +1,7 @@
-#!usr/bin/python3
-""" Empty class """
+#!/usr/bin/python3
+"""a module to write an empty class"""
 
 
 class BaseGeometry:
-    """ Empty class """
+    """an empty class"""
     pass
